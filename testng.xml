@@ -1,0 +1,40 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="TestSuite" verbose="1" >
+
+    <test name="Test on Chrome" >
+        <parameter name="selenium.browser" value="chrome"/>
+        <classes>
+            <class name="CreateProductTest"></class>
+        </classes>
+    </test>
+
+    <test name="Test on Firefox" >
+        <parameter name="selenium.browser" value="firefox"/>
+        <classes>
+            <class name="CreateProductTest"></class>
+        </classes>
+    </test>
+
+    <test name="Test on IE" >
+        <parameter name="selenium.browser" value="ie"/>
+        <classes>
+            <class name="CreateProductTest"></class>
+        </classes>
+    </test>
+
+    <test name="Test on headless Chrome" >
+        <parameter name="selenium.browser" value="headless-chrome"/>
+        <classes>
+            <class name="CreateProductTest"></class>
+        </classes>
+    </test>
+
+    <test name="Test on mobile browser" >
+        <parameter name="selenium.browser" value="mobile"/>
+        <classes>
+            <class name="CreateProductTest"></class>
+        </classes>
+    </test>
+
+</suite>
