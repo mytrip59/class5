@@ -39,13 +39,4 @@ public class PrestashopPage {
         webDriverWait.until(ExpectedConditions.visibilityOfElementLocated(footerSelector));
 
     }
-
-    public void openCreatedPoductPage(WebElement foundWebElement) {
-        WebDriverWait webDriverWait = new WebDriverWait(webDriver, 10);
-        webDriverWait.until(ExpectedConditions.visibilityOfElementLocated(footerSelector));
-        foundWebElement.click();
-        webDriverWait.until(ExpectedConditions.visibilityOfElementLocated(amountNewPoductSelector));
-    }
-
-
 }
